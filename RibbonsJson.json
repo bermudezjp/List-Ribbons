@@ -1,0 +1,53 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/sp/v2/tile-formatting.schema.json",
+  "hideSelection": true,
+  "width": "220",
+  "height": "150",
+  "formatter": {
+    "elmType": "a",
+    "attributes": {
+      "href": "[$link]",
+      "target": "=if([$NewTab] == true, '[$link]', '')"
+    },
+    "children": [
+      {
+        "elmType": "div",
+        "attributes": {
+          "class": "ms-bgColor-gray40--hover ms-fontColor-white"
+        },
+        "style": {
+          "display": "flex",
+          "flex-wrap": "wrap",
+          "min-width": "220px",
+          "min-height": "150px",
+          "margin-right": "5.5%",
+          "margin-top": "5.5%",
+          "box-shadow": "2px 2px 4px darkgrey"
+        },
+        "children": [
+          {
+            "elmType": "div",
+            "style": {
+              "text-align": "center",
+              "margin": "auto"
+            },
+            "children": [
+              {
+                "elmType": "img",
+                "style": {
+                  "width": "210px",
+                  "height": "150px",
+                  "overflow": "hidden"
+                },
+                "attributes": {
+                  "src": "[$Picture]",
+                  "class": "ms-fontSize-su"
+                }
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}
